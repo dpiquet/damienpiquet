@@ -51,4 +51,8 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    document.addEventListener('activate.bs.scrollspy', function(event){
+        console.log("event", event.relatedTarget.hash);
+    });
+
 });

@@ -10,5 +10,14 @@
     bottom: 0;
     z-index: -1;
 
-    background-image: url("../assets/img/bg-masthead.jpg");
+    background-color: #ece0e1;
+}
+
+.competence {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cv-section-title {
+    text-shadow: 1px 1px #4a1936;
 }
