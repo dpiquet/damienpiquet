@@ -14,8 +14,12 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/dpiquet.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <div id="background-animation">
+    
+        </div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -26,9 +30,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Mes compétences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Derniers Projets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Me contacter</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,7 +44,7 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Damien PIQUET</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Développeur fullstack</h2>
-                        <a class="btn btn-primary" href="#about">Découvrir</a>
+                        <a class="btn btn-primary" href="#about">Mes compétences</a>
                     </div>
                 </div>
             </div>
@@ -50,19 +54,74 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
-                        <p class="text-white-50">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                            The theme is open source, and you can use it for any purpose, personal or commercial.
-                        </p>
+                        <h2 class="text-white mb-4">Mes compétences</h2>
+                        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="bg-transparent text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                                            <h4 class="text-white">Backend</h4>
+                                            <p class="mb-0 text-white-50">
+                                                Implémentation de logique métier, développement d'API, intégration d'API tierces, SSO, ... 
+                                                Quel que soit votre projet, je m'adapte à l'existant ou je batis au dessus des frameworks les plus
+                                                modernes pour construire les rouages qui feront fonctionner votre application.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="bg-transparent text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                                            <h4 class="text-white">Frontend</h4>
+                                            <p class="mb-0 text-white-50">
+                                                HTML, CSS, JS, Chaque projet doit s'exposer aux utilisateurs finaux pour fonctionner.
+                                                Que ce soit du rendu server-side avec du templating ou un front complexe en angular,
+                                                je m'adapte !
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="bg-transparent text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                                            <h4 class="text-white">Contenerisation & tests</h4>
+                                            <p class="mb-0 text-white-50">
+                                                Un projet fiable commence par une stack identique, de la machine de dev
+                                                au serveur de prod. Qui n'a jamais entendu le fameux "Ca marche sur mon poste pourtant !".
+                                                Les tests qui sont lancés à chaque commit évitent aussi de nombreux problème en visant une detection
+                                                au plus tôt des regressions.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="bg-transparent text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                                            <h4 class="text-white">Déploiement</h4>
+                                            <p class="mb-0 text-white-50">
+                                                Quand je dis fullstack, c'est fullstack ! Maintenant que tout est 
+                                                prêt, je peux déployer l'application sur les serveurs. Mes technos préférées
+                                                sont docker et kubernetes, mais le déploiement "à l'ancienne" reste toujours une option,
+                                                surtout sur de l'existant.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
             </div>
         </section>
         <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
+        <section class="projects-section bg-transparent" id="projects">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
