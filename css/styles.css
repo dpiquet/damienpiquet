@@ -18,7 +18,7 @@
   --bs-red: #a16468;
   --bs-orange: #fd7e14;
   --bs-yellow: #e4c662;
-  --bs-green: #67c29c;
+  --bs-green: #6BD1AA;
   --bs-teal: #64a19d;
   --bs-cyan: #1cabc4;
   --bs-black: #000;
@@ -149,6 +149,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
+  font-style: italic;
 }
 @media (min-width: 1200px) {
   h4, .h4 {
@@ -2846,7 +2847,7 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #64a19d;
+  --bs-btn-bg: #6BD1AA;
   --bs-btn-border-color: #64a19d;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #558985;
@@ -4661,8 +4662,8 @@ textarea.form-control-lg {
 }
 
 .badge {
-  --bs-badge-padding-x: 0.65em;
-  --bs-badge-padding-y: 0.35em;
+  --bs-badge-padding-x: 1em;
+  --bs-badge-padding-y: 0.6em;
   --bs-badge-font-size: 0.75em;
   --bs-badge-font-weight: 700;
   --bs-badge-color: #fff;
@@ -4677,7 +4678,9 @@ textarea.form-control-lg {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: var(--bs-badge-border-radius);
+  margin-bottom: 1em;
 }
+
 .badge:empty {
   display: none;
 }
@@ -6771,7 +6774,7 @@ textarea.form-control-lg {
 
 .text-bg-primary {
   color: #fff !important;
-  background-color: RGBA(100, 161, 157, var(--bs-bg-opacity, 1)) !important;
+  background-color: var(--bs-green);
 }
 
 .text-bg-secondary {
@@ -8108,6 +8111,10 @@ textarea.form-control-lg {
 
 .fw-bolder {
   font-weight: bolder !important;
+}
+
+.fw-maxibold {
+  font-weight: 900;
 }
 
 .lh-1 {
@@ -11043,9 +11050,9 @@ body {
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: var(--bs-green);
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid var(--bs-green);
   }
 }
 
