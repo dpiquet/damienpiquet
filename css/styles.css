@@ -1,4 +1,8 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+
 /*!
 * Start Bootstrap - Grayscale v7.0.6 (https://startbootstrap.com/theme/grayscale)
 * Copyright 2013-2023 Start Bootstrap
@@ -11115,13 +11119,9 @@ body {
   }
 }
 
-.about-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-/*.about-section p {*/
-/*  margin-bottom: 5rem;*/
+/*.about-section {*/
+/*  padding-top: 5rem;*/
+/*  padding-bottom: 5rem;*/
 /*}*/
 
 .projects-section {

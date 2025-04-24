@@ -8,7 +8,28 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
     const canvas = document.querySelector("#background-animation");
 }
 
+let selectedScene = 'root'
 let myGameInstance = null;
+
+document.addEventListener('activate.bs.scrollspy', function(event){
+    console.log("event", event.relatedTarget.hash);
+
+    switch (event.relatedTarget.hash) {
+        case '#projects':
+            selectedScene = 'showroom';
+            break;
+        case '#about':
+            selectedScene = 'desk';
+            break;
+        case '#contact':
+            selectedScene = 'contact';
+            break;
+    }
+
+    // Call unity to update camera accordingly
+    if (myGameInstance)
+        myGameInstance.SendMessage('api', 'setCamera', selectedScene);
+});
 
 createUnityInstance(document.querySelector("#background-animation"), {
     arguments: [],
@@ -23,25 +44,5 @@ createUnityInstance(document.querySelector("#background-animation"), {
     // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
 }).then(unityInstance => {
     myGameInstance = unityInstance;
-    
-    // Now listen to cursor updates
-    document.addEventListener('activate.bs.scrollspy', function(event){
-        console.log("event", event.relatedTarget.hash);
-
-        let selectedScene = 'root';
-        switch (event.relatedTarget.hash) {
-            case '#projects':
-                selectedScene = 'showroom';
-                break;
-            case '#about':
-                selectedScene = 'desk';
-                break;
-            case '#contact':
-                selectedScene = 'contact';
-                break;
-        }
-        
-        // Call unity to update camera accordingly
-        myGameInstance.SendMessage('api', 'setCamera', selectedScene);
-    });
+    myGameInstance.SendMessage('api', 'setCamera', selectedScene);
 });

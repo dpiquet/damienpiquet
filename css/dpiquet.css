@@ -114,3 +114,9 @@
 .klodios {
     background-image: url('../assets/img/klodios.png');
 }
+
+h1 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: "Agbalumo", system-ui;
+}
