@@ -86,3 +86,31 @@
     border: 6px dotted #524040 !important;
     padding: 1rem;
 }
+
+.project-tile {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.domus {
+    background-image: url('../assets/img/domus.png');
+}
+
+.dominos {
+    background-image: url('../assets/img/dominos.png');
+}
+
+.hopp {
+    background-image: url('../assets/img/hopp.png');
+}
+
+.followme {
+    background-image: url('../assets/img/followme.png');
+}
+
+.klodios {
+    background-image: url('../assets/img/klodios.png');
+}
