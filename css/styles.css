@@ -11120,9 +11120,9 @@ body {
   padding-bottom: 5rem;
 }
 
-.about-section p {
-  margin-bottom: 5rem;
-}
+/*.about-section p {*/
+/*  margin-bottom: 5rem;*/
+/*}*/
 
 .projects-section {
   padding: 5rem 0;
@@ -11140,11 +11140,12 @@ body {
   padding: 3rem;
   font-size: 90%;
 }
-@media (min-width: 992px) {
-  .projects-section .project-text {
-    padding: 5rem;
-  }
-}
+
+/*@media (min-width: 992px) {*/
+/*  .projects-section .project-text {*/
+/*    padding: 5rem;*/
+/*  }*/
+/*}*/
 
 .contact-section {
   padding-top: 5rem;

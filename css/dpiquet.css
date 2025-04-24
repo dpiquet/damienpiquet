@@ -42,3 +42,47 @@
     );
     background-clip: text;
 }
+
+.about-section .card {
+    width: 20rem;
+}
+
+.about-section .card ul li {
+    list-style: none;
+    
+}
+
+.about-section .xp-logo {
+    height: 145px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.teicee-logo {
+   background-image: url('../assets/img/teicee.jpg');
+}
+
+.dys-logo {
+    background-image: url('../assets/img/dys.jpg');
+}
+
+.forlabs-logo {
+    background-image: url('../assets/img/forlabs.png');
+}
+
+#avatar {
+    border: 10px solid var(--bs-green);
+    width: 25vh;
+}
+
+.avatar-sep {
+    width: 6em;
+    color: var(--bs-white);
+    font-weight: bolder;
+}
+
+.project-container {
+    border: 6px dotted #524040 !important;
+    padding: 1rem;
+}
