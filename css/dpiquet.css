@@ -83,7 +83,7 @@
 }
 
 .project-container {
-    border: 6px dotted #524040 !important;
+    border: 6px dotted #595857 !important;
     padding: 1rem;
 }
 
@@ -119,4 +119,15 @@ h1 {
     margin-top: 2em;
     margin-bottom: 2em;
     font-family: "Agbalumo", system-ui;
+}
+
+.project h5 {
+    font-size: 0.9rem;
+    /*color: var(--bs-gray) !important;*/
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.text-bg-separator {
+    background-color: #59585761;
 }
