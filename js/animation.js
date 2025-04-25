@@ -11,6 +11,11 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 let selectedScene = 'root'
 let myGameInstance = null;
 
+function callSceneChange() {
+    if (myGameInstance)
+        myGameInstance.SendMessage('api', 'setCamera', selectedScene);
+}
+
 document.addEventListener('activate.bs.scrollspy', function(event){
     console.log("event", event.relatedTarget.hash);
 
@@ -26,16 +31,16 @@ document.addEventListener('activate.bs.scrollspy', function(event){
             break;
     }
 
-    // Call unity to update camera accordingly
-    if (myGameInstance)
-        myGameInstance.SendMessage('api', 'setCamera', selectedScene);
+    callSceneChange();
 });
+
+
 
 createUnityInstance(document.querySelector("#background-animation"), {
     arguments: [],
-    dataUrl: "../assets/3d/build.data.br",
-    frameworkUrl: "../assets/3d/build.framework.js.br",
-    codeUrl: "../assets/3d/build.wasm.br",
+    dataUrl: "../assets/3d/build.data.unityweb",
+    frameworkUrl: "../assets/3d/build.framework.js.unityweb",
+    codeUrl: "../assets/3d/build.wasm.unityweb",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DamienPIQUET",
     productName: "portfolio",
@@ -47,7 +52,13 @@ createUnityInstance(document.querySelector("#background-animation"), {
     myGameInstance.SendMessage('api', 'setCamera', selectedScene);
 });
 
-window.addEventListener('scroll', () => {
-    if (myGameInstance)
-        myGameInstance.SendMessage('api', 'setCamera', selectedScene);
+window.addEventListener('scroll', (e) => {
+    if (selectedScene === 'root')
+        return;
+    
+    if (window.scrollY < document.documentElement.clientHeight / 4)
+    {
+        selectedScene = 'root';
+        callSceneChange();
+    }
 });
