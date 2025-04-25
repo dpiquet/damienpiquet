@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a3cebebc-fec2-41e9-8eca-2ffd72740e44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/3d/build.data.unityweb" beforeDir="false" afterPath="$PROJECT_DIR$/assets/3d/build.data.unityweb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/3d/build.loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/3d/build.loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/3d/build.wasm.unityweb" beforeDir="false" afterPath="$PROJECT_DIR$/assets/3d/build.wasm.unityweb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745324100760</updated>
       <workItem from="1745324101860" duration="3948000" />
-      <workItem from="1745396580442" duration="49413000" />
+      <workItem from="1745396580442" duration="52246000" />
     </task>
     <servers />
   </component>
