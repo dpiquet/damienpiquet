@@ -33,9 +33,9 @@ document.addEventListener('activate.bs.scrollspy', function(event){
 
 createUnityInstance(document.querySelector("#background-animation"), {
     arguments: [],
-    dataUrl: "../assets/3d/build.data",
-    frameworkUrl: "../assets/3d/build.framework.js",
-    codeUrl: "../assets/3d/build.wasm",
+    dataUrl: "../assets/3d/build.data.br",
+    frameworkUrl: "../assets/3d/build.framework.js.br",
+    codeUrl: "../assets/3d/build.wasm.br",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DamienPIQUET",
     productName: "portfolio",
@@ -45,4 +45,9 @@ createUnityInstance(document.querySelector("#background-animation"), {
 }).then(unityInstance => {
     myGameInstance = unityInstance;
     myGameInstance.SendMessage('api', 'setCamera', selectedScene);
+});
+
+window.addEventListener('scroll', () => {
+    if (myGameInstance)
+        myGameInstance.SendMessage('api', 'setCamera', selectedScene);
 });
