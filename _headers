@@ -1,6 +1,3 @@
-/*.unityweb
+/assets/3d/*.unityweb
   Content-Encoding: br
-
-
-/assets/3d/build.data.unityweb
-  Content-Encoding: br
+  Cache-Control: max-age=604800
