@@ -145,6 +145,10 @@
     background-image: url('../assets/img/klodios.png');
 }
 
+.mcs {
+    background-image: url('../assets/img/mcs.jpg');
+}
+
 h1 {
     margin-top: 2em;
     margin-bottom: 2em;
