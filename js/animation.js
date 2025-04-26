@@ -17,8 +17,6 @@ function callSceneChange() {
 }
 
 document.addEventListener('activate.bs.scrollspy', function(event){
-    console.log("event", event.relatedTarget.hash);
-
     switch (event.relatedTarget.hash) {
         case '#projects':
             selectedScene = 'showroom';
