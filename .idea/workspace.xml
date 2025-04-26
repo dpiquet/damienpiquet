@@ -6,15 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a3cebebc-fec2-41e9-8eca-2ffd72740e44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/3d/build.data.unityweb" beforeDir="false" afterPath="$PROJECT_DIR$/assets/3d/build.data.unityweb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/3d/build.loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/3d/build.loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/3d/build.wasm.unityweb" beforeDir="false" afterPath="$PROJECT_DIR$/assets/3d/build.wasm.unityweb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/dpiquet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/dpiquet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,6 +33,7 @@
   "keyToString": {
     "JavaScript Debug.index.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -52,6 +54,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PS-251.23774.466" />
+        <option value="bundled-php-predefined-a98d8de5180a-aaeaa8632555-com.jetbrains.php.sharedIndexes-PS-251.23774.466" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,6 +72,7 @@
       <updated>1745324100760</updated>
       <workItem from="1745324101860" duration="3948000" />
       <workItem from="1745396580442" duration="52246000" />
+      <workItem from="1745665891990" duration="4561000" />
     </task>
     <servers />
   </component>
