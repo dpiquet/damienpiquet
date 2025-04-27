@@ -165,3 +165,8 @@ h1 {
 .text-bg-separator {
     background-color: #59585761;
 }
+
+#root {
+    position:cl absolute;
+    bottom: 10% !important;
+}
