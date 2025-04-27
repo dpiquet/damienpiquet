@@ -16,21 +16,66 @@ function callSceneChange() {
         myGameInstance.SendMessage('api', 'setCamera', selectedScene);
 }
 
-document.addEventListener('activate.bs.scrollspy', function(event){
-    switch (event.relatedTarget.hash) {
-        case '#projects':
-            selectedScene = 'showroom';
-            break;
-        case '#about':
-            selectedScene = 'desk';
-            break;
-        case '#contact':
-            selectedScene = 'contact';
-            break;
-    }
-
+function setScene(newScene) {
+    if (selectedScene === newScene) return;
+    selectedScene = newScene;
     callSceneChange();
+}
+
+var controller = new ScrollMagic.Controller({
+    // addIndicators: true
 });
+
+new ScrollMagic.Scene({triggerElement: '#root'})
+    .addTo(controller)
+    .on("start", function () {
+        setScene('root');
+    });
+new ScrollMagic.Scene({triggerElement: '#about'})
+    .addTo(controller)
+    .on("start", function () {
+        setScene('desk');
+    });
+new ScrollMagic.Scene({triggerElement: '#about-bottom'})
+    .addTo(controller)
+    .on("start", function () {
+        setScene('desk');
+    });
+
+new ScrollMagic.Scene({triggerElement: '#projects'})
+    .addTo(controller)
+    .on("start", function () {
+        setScene('showroom');
+    });
+new ScrollMagic.Scene({triggerElement: '#projects-bottom'})
+    .addTo(controller)
+    .on("start", function () {
+        setScene('showroom');
+    });
+
+new ScrollMagic.Scene({triggerElement: '#contact'})
+    .addTo(controller)
+    .on("start", function () {
+        setScene('contact');
+    });
+
+
+// document.addEventListener('activate.bs.scrollspy', function(event){
+//     console.log('scroll event: ', event.relatedTarget.hash);
+//     switch (event.relatedTarget.hash) {
+//         case '#projects':
+//             selectedScene = 'showroom';
+//             break;
+//         case '#about':
+//             selectedScene = 'desk';
+//             break;
+//         case '#contact':
+//             selectedScene = 'contact';
+//             break;
+//     }
+//
+//     callSceneChange();
+// });
 
 
 
@@ -50,13 +95,13 @@ createUnityInstance(document.querySelector("#background-animation"), {
     myGameInstance.SendMessage('api', 'setCamera', selectedScene);
 });
 
-window.addEventListener('scroll', (e) => {
-    if (selectedScene === 'root')
-        return;
-    
-    if (window.scrollY < document.documentElement.clientHeight / 4)
-    {
-        selectedScene = 'root';
-        callSceneChange();
-    }
-});
+// window.addEventListener('scroll', (e) => {
+//     if (selectedScene === 'root')
+//         return;
+//    
+//     if (window.scrollY < document.documentElement.clientHeight / 4)
+//     {
+//         selectedScene = 'root';
+//         callSceneChange();
+//     }
+// });
