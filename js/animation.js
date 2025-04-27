@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     var controller = new ScrollMagic.Controller({
-        addIndicators: true
+        // addIndicators: true
     });
 
     new ScrollMagic.Scene({triggerElement: '#root'})
