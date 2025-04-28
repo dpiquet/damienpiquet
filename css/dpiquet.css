@@ -8,9 +8,23 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
 
     background-color: #585a58;
+}
+
+#background-animation-vignette {
+
+    background: transparent;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 1) 100%);
+    
+    /*background: radial-gradient(#00000000, #000000ff);*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .competence {
