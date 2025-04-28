@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a3cebebc-fec2-41e9-8eca-2ffd72740e44" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/3d/build.data.unityweb" beforeDir="false" afterPath="$PROJECT_DIR$/assets/3d/build.data.unityweb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/dpiquet.github.io/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/damienpiquet/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -75,6 +75,7 @@
       <workItem from="1745665891990" duration="12337000" />
       <workItem from="1745754391097" duration="55000" />
       <workItem from="1745754472033" duration="324000" />
+      <workItem from="1745822899789" duration="476000" />
     </task>
     <servers />
   </component>
