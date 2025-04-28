@@ -1,13 +1,12 @@
 window.addEventListener('DOMContentLoaded', event => {
 
+    // const canvas = document.querySelector("#background-animation");
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
         const meta = document.createElement('meta');
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
-
-        const canvas = document.querySelector("#background-animation");
     }
 
     let selectedScene = 'root'
